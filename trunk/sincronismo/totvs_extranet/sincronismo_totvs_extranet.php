@@ -20,7 +20,7 @@
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "SH1010"){
 			
-			//Tabela de Produto Recurso
+			//Tabela de Recurso
 			require("sincronismo_SH1010.php");
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "SB1010"){
@@ -100,7 +100,7 @@
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "SC9010"){
 			
-			//Tabela de Pedido Liberado
+			//Tabela de Pedido Venda Liberado
 			require("sincronismo_SC9010.php");
 			
 		}

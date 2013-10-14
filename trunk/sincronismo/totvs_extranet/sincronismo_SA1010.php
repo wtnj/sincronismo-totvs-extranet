@@ -78,7 +78,7 @@
 						 , NU_DDD           = '".trim($rowTotvsSA1010['A1_DDD'])."' 
 						 , NU_TEL           = '".trim($rowTotvsSA1010['A1_TEL'])."' 
 						 , EM_CLIENTE       = '".trim(addslashes($rowTotvsSA1010['A1_EMAIL']))."'   
-				                 , FL_BLOQUEADO     = '".trim($rowTotvsSA1010['A1_MSBLQL'])."'
+				         , FL_BLOQUEADO     = '".trim($rowTotvsSA1010['A1_MSBLQL'])."'
 					 WHERE CO_RECNO = '".$rowTotvsSA1010['R_E_C_N_O_']."'",$conexaoExtranet)or die(mysql_error());
 						
 	}elseif($rowTotvsLog["TP_LOG"] == "Update Campo D_E_L_E_T_"){
