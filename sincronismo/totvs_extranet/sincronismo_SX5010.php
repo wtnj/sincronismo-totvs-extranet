@@ -33,15 +33,15 @@
 	}elseif($rowTotvsLog["TP_LOG"] == "Update Campo D_E_L_E_T_"){
 				
 	    if(trim($rowTotvsSX5010['D_E_L_E_T_'])=='*'){
-	    	mysql_query("UPDATE tb_pcp_cor SET FL_DELET= '*' WHERE CO_RECNO = '".$rowTotvsSX5010['R_E_C_N_O_']."'",$conexaoExtranet);
+	    	mysql_query("UPDATE tb_pcp_cor SET FL_DELET = '*' WHERE CO_RECNO = '".$rowTotvsSX5010['R_E_C_N_O_']."'",$conexaoExtranet);
 	    }else{
-	    	mysql_query("UPDATE tb_pcp_cor SET FL_DELET= null WHERE CO_RECNO = '".$rowTotvsSX5010['R_E_C_N_O_']."'",$conexaoExtranet);
+	    	mysql_query("UPDATE tb_pcp_cor SET FL_DELET = null WHERE CO_RECNO = '".$rowTotvsSX5010['R_E_C_N_O_']."'",$conexaoExtranet);
 	    }
 	    
 				
 	}elseif($rowTotvsLog["TP_LOG"] == "Delete"){
 				
-	    mysql_query("UPDATE tb_pcp_cor SET FL_DELET='*' WHERE CO_RECNO = '".$rowTotvsSX5010['R_E_C_N_O_']."'",$conexaoExtranet);
+	    mysql_query("UPDATE tb_pcp_cor SET FL_DELET = '*' WHERE CO_RECNO = '".$rowTotvsSX5010['R_E_C_N_O_']."'",$conexaoExtranet);
 				
 	}
 			

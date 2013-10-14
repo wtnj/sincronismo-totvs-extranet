@@ -21,21 +21,25 @@
 	}elseif($rowTotvsLog["TP_LOG"] == "Update"){
 				
 	    mysql_query("UPDATE tb_pcp_recurso SET
-					     CO_RECURSO    = '".$rowTotvsSH1010['H1_CODIGO']."'
+					     CO_RECURSO   = '".$rowTotvsSH1010['H1_CODIGO']."'
 					     , NO_RECURSO = '".$rowTotvsSH1010['H1_DESCRI']."'
 					 WHERE CO_RECNO = '".$rowTotvsSH1010['R_E_C_N_O_']."'",$conexaoExtranet);
 			
 	}elseif($rowTotvsLog["TP_LOG"] == "Update Campo D_E_L_E_T_"){
 				
-	    if(trim($rowTotvsSH1010['D_E_L_E_T_'])=='*'){
-	    	mysql_query("UPDATE tb_pcp_recurso SET FL_DELET= '*' WHERE CO_RECNO = '".$rowTotvsSH1010['R_E_C_N_O_']."'",$conexaoExtranet);
-	    }else{
-	    	mysql_query("UPDATE tb_pcp_recurso SET FL_DELET= null WHERE CO_RECNO = '".$rowTotvsSH1010['R_E_C_N_O_']."'",$conexaoExtranet);
-	    }
+	    if(trim($rowTotvsSH1010['D_E_L_E_T_']) == '*'){
+		
+	    	mysql_query("UPDATE tb_pcp_recurso SET FL_DELET = '*' WHERE CO_RECNO = '".$rowTotvsSH1010['R_E_C_N_O_']."'",$conexaoExtranet);
+	    
+		}else{
+	    
+	        mysql_query("UPDATE tb_pcp_recurso SET FL_DELET = null WHERE CO_RECNO = '".$rowTotvsSH1010['R_E_C_N_O_']."'",$conexaoExtranet);
+	    
+		}
 				
 	}elseif($rowTotvsLog["TP_LOG"] == "Delete"){
 				
-	    mysql_query("UPDATE tb_pcp_recurso SET FL_DELET ='*' WHERE CO_RECNO = '".$rowTotvsSH1010['R_E_C_N_O_']."'",$conexaoExtranet);
+	    mysql_query("UPDATE tb_pcp_recurso SET FL_DELET = '*' WHERE CO_RECNO = '".$rowTotvsSH1010['R_E_C_N_O_']."'",$conexaoExtranet);
 				
 	}
 			
