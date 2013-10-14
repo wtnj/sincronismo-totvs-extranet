@@ -1,0 +1,1 @@
+php -f D:\www\xampp\htdocs\sincronismo\sincronismo_geral.php
