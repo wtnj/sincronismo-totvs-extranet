@@ -31,26 +31,26 @@
 			if(ocirowcount($sqlVerificaIntegracaoTotvsApontamento) == null){
 				
 			    //INICIO CAPTURA O CODIGO DO ULTIMO R_E_C_N_O_ DA TABELA
-				$sqlIntegraçãoTotvsRecno = ociparse($totvsConexao,"SELECT MAX(R_E_C_N_O_) AS R_E_C_N_O FROM ZP0010");
-				ociexecute($sqlIntegraçãoTotvsRecno);	
+				$sqlIntegracaoTotvsRecno = ociparse($totvsConexao,"SELECT MAX(R_E_C_N_O_) AS R_E_C_N_O FROM ZP0010");
+				ociexecute($sqlIntegracaoTotvsRecno);	
 				
-				$rowIntegraçãoTotvsRecno = oci_fetch_array($sqlIntegraçãoTotvsRecno);
+				$rowIntegracaoTotvsRecno = oci_fetch_array($sqlIntegracaoTotvsRecno);
 				
-				if($rowIntegraçãoTotvsRecno['R_E_C_N_O'] > 0){
-					$recnoIntegracaoApontamento = $rowIntegraçãoTotvsRecno['R_E_C_N_O']+1;
+				if($rowIntegracaoTotvsRecno['R_E_C_N_O'] > 0){
+					$recnoIntegracaoApontamento = $rowIntegracaoTotvsRecno['R_E_C_N_O']+1;
 				}else{
 					$recnoIntegracaoApontamento = 1;
 				}
 				//FIM CAPTURA O CODIGO DO ULTIMO R_E_C_N_O_ DA TABELA
 			
 				//INICIO CAPTURA O CODIGO Da ULTIMA INTEGRACAO DA TABELA
-				$sqlIntegraçãoTotvsCodigoIntegracao = ociparse($totvsConexao,"SELECT MAX(ZP0_XCOINT) AS ZP0_XCOINT FROM ZP0010");
-				ociexecute($sqlIntegraçãoTotvsCodigoIntegracao);	
+				$sqlIntegracaoTotvsCodigoIntegracao = ociparse($totvsConexao,"SELECT MAX(ZP0_XCOINT) AS ZP0_XCOINT FROM ZP0010");
+				ociexecute($sqlIntegracaoTotvsCodigoIntegracao);	
 				
-				$rowIntegraçãoTotvsCodigoIntegracao = oci_fetch_array($sqlIntegraçãoTotvsCodigoIntegracao);
+				$rowIntegracaoTotvsCodigoIntegracao = oci_fetch_array($sqlIntegracaoTotvsCodigoIntegracao);
 				
-				if($rowIntegraçãoTotvsCodigoIntegracao['ZP0_XCOINT'] > 0){
-					$codigoIntegracaoApontamento = $rowIntegraçãoTotvsCodigoIntegracao['ZP0_XCOINT']+1;
+				if($rowIntegracaoTotvsCodigoIntegracao['ZP0_XCOINT'] > 0){
+					$codigoIntegracaoApontamento = $rowIntegracaoTotvsCodigoIntegracao['ZP0_XCOINT']+1;
 				}else{
 					$codigoIntegracaoApontamento = 1;
 				}
