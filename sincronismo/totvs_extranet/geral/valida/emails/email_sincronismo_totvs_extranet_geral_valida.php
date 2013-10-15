@@ -104,7 +104,7 @@ A.STYLE01:hover{text-decoration: underline; font-size:12px; color:#990000;}
 </body>
 </html>"; 
 	    
-	$subject		  = "VALIDAÇÃO SINCRONISMO TOTVS COM EXTRANET";
+	$subject		  = "SCHEDULE EXTRANET - VALIDAÇÃO SINCRONISMO TOTVS COM EXTRANET";
 	$nome_remetente	  = "Extranet Bravo Moveis";
 	$email_remetente  = "ti@bravomoveis.com";
 	$to               = "ejunior@bravomoveis.com";
