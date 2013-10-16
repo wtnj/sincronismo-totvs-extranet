@@ -3,7 +3,7 @@
 	echo "<br>[ ".date("d/m/Y h:i:s")." ] Sincronismo Geral Iniciado...";
 	
 	//Tabela de Ordem de Producao
-	echo "Sincronismo Tabela de Ordem de Producao Concluido.<br>";
+	echo "<br>Sincronismo Tabela de Ordem de Producao Concluido.<br>";
 	require("sincronismo_GERAL_SC2010.php");
 			
 	//Tabela de Operacao
