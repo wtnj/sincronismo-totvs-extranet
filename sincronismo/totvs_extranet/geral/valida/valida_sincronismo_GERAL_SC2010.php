@@ -12,9 +12,9 @@
 	if($quantidadeTotvsSC2010 != $quantidadeMySQLPcpOrdemProducao){
 		$quantidadeDiferenca = $quantidadeTotvsSC2010 - $quantidadeMySQLPcpOrdemProducao;
 	    enviaEmailNotificacao(date("d/m/Y h:i:s"), "PcpOrdemProducao", $quantidadeTotvsSC2010, $quantidadeMySQLPcpOrdemProducao, $quantidadeDiferenca);
-		echo "Sincronismo Validação Tabela de Ordem de Producao Concluido e e-mail de Notificacao Enviado.<br>";
+		echo "<br>Sincronismo Validação Tabela de Ordem de Producao Concluido e e-mail de Notificacao Enviado.<br>";
 	}else{
-	    echo "Sincronismo Validação Tabela de Ordem de Producao Concluido sem Divergencia.<br>";
+	    echo "<br>Sincronismo Validação Tabela de Ordem de Producao Concluido sem Divergencia.<br>";
 	}
 			
 ?>
