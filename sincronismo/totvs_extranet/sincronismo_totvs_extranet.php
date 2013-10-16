@@ -81,27 +81,27 @@
 		}elseif($rowTotvsLog["TB_LOG"] == "DAK010"){
 			
 			//Tabela de Carga
-			//require("sincronismo_DAK010.php");
+			require("sincronismo_DAK010.php");
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "DAI010"){
 			
 			//Tabela de Carga Itens
-			//require("sincronismo_DAI010.php");
+			require("sincronismo_DAI010.php");
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "SC5010"){
 			
 			//Tabela de Pedido de Venda
-			//require("sincronismo_SC5010.php");
+			require("sincronismo_SC5010.php");
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "SC6010"){
 			
 			//Tabela de Pedido de Venda Itens
-			//require("sincronismo_SC6010.php");
+			require("sincronismo_SC6010.php");
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "SC9010"){
 			
 			//Tabela de Pedido Venda Liberado
-			//require("sincronismo_SC9010.php");
+			require("sincronismo_SC9010.php");
 			
 		}
 
