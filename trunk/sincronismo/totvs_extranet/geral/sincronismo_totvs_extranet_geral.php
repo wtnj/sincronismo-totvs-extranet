@@ -1,6 +1,6 @@
 <?php 
 		
-	echo "[ ".date("d/m/Y h:i:s")." ] Sincronismo Geral Iniciado...<br>";
+	echo "<br>[ ".date("d/m/Y h:i:s")." ] Sincronismo Geral Iniciado...";
 	
 	//Tabela de Ordem de Producao
 	echo "Sincronismo Tabela de Ordem de Producao Concluido.<br>";
@@ -31,7 +31,7 @@
 	require("sincronismo_GERAL_SG1010.php");
 			
 	//Tabela de Operação Componente
-	echo "Sincronismo Tabela de Operação Componente Concluido.<br>";
+	echo "Sincronismo Tabela de Operacao Componente Concluido.<br>";
 	require("sincronismo_GERAL_SGF010.php");
 			
 	//Tabela de Ajuste de Empenho
@@ -78,6 +78,6 @@
 	echo "Sincronismo Tabela de Pedido de Venda Liberado Concluido.<br>";
 	require("sincronismo_GERAL_SC9010.php");
 	
-	echo "[ ".date("d/m/Y h:i:s")." ] Sincronismo Geral Finalizado...";
+	echo "<br>[ ".date("d/m/Y h:i:s")." ] Sincronismo Geral Finalizado...";
 	
 ?>

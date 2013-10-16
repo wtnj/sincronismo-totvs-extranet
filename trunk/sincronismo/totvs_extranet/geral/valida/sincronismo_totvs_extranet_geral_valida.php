@@ -1,6 +1,6 @@
 <?php 
 	
-	echo "[ ".date("d/m/Y h:i:s")." ] Sincronismo Validação Geral Iniciado...<br>";
+	echo "<br>[ ".date("d/m/Y h:i:s")." ] Sincronismo Validacao Geral Iniciado...";
 	
 	function enviaEmailNotificacao($dataHoraValidacao, $tabelaValidacao, $quantidadeOracle, $quantidadeMySQL, $quantidadeDiferenca){
 	    
@@ -74,6 +74,6 @@
 	//Tabela de Pedido de Venda Liberado
 	require("valida_sincronismo_GERAL_SC9010.php");
 				
-	echo "[ ".date("d/m/Y h:i:s")." ] Sincronismo Validação Geral Finalizado...";
+	echo "<br>[ ".date("d/m/Y h:i:s")." ] Sincronismo Validacao Geral Finalizado...";
 	
 ?>
