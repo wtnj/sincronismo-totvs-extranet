@@ -41,7 +41,6 @@
 		}elseif($rowTotvsLog["TB_LOG"] == "SG1010"){
 			
 			//Tabela de Produto Estrutura
-			echo "Tabela de Produto Estrutura";
 			require("sincronismo_SG1010.php");
 			
 		}elseif($rowTotvsLog["TB_LOG"] == "SGF010"){

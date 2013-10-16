@@ -9,6 +9,7 @@
 												  , D4_QTSEGUM
 												  , D4_DATA
 												  , R_E_C_N_O_
+												  , D_E_L_E_T_
 										      FROM SD4010
 										      ORDER BY R_E_C_N_O_");
 	ociexecute($sqlTotvsSD4010);
