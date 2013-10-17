@@ -25,10 +25,10 @@
 								 , CO_PRODUTO
 								 , CO_RECNO
 								 , FL_DELET)
-							 VALUES('".$rowTotvsSG2010['G2_RECURSO']."' 
-							     , '".$rowTotvsSG2010['G2_OPERAC']."'
-								 , '".$rowTotvsSG2010['G2_DESCRI']."'
-								 , '".$rowTotvsSG2010['G2_PRODUTO']."'
+							 VALUES('".trim($rowTotvsSG2010['G2_RECURSO'])."' 
+							     , '".trim($rowTotvsSG2010['G2_OPERAC'])."'
+								 , '".trim($rowTotvsSG2010['G2_DESCRI'])."'
+								 , '".trim($rowTotvsSG2010['G2_PRODUTO'])."'
 								 , '".$rowTotvsSG2010['R_E_C_N_O_']."'
 								 , '*')",$conexaoExtranet)or die(mysql_error());	
 								 						
@@ -39,10 +39,10 @@
 								 , DS_OPERACAO
 								 , CO_PRODUTO
 								 , CO_RECNO)
-							 VALUES('".$rowTotvsSG2010['G2_RECURSO']."' 
-							     , '".$rowTotvsSG2010['G2_OPERAC']."'
-								 , '".$rowTotvsSG2010['G2_DESCRI']."'
-								 , '".$rowTotvsSG2010['G2_PRODUTO']."'
+							 VALUES('".trim($rowTotvsSG2010['G2_RECURSO'])."' 
+							     , '".trim($rowTotvsSG2010['G2_OPERAC'])."'
+								 , '".trim($rowTotvsSG2010['G2_DESCRI'])."'
+								 , '".trim($rowTotvsSG2010['G2_PRODUTO'])."'
 								 , '".$rowTotvsSG2010['R_E_C_N_O_']."')",$conexaoExtranet)or die(mysql_error());
 												 
 			}
@@ -52,20 +52,20 @@
 			if(trim($rowTotvsSG2010['D_E_L_E_T_']) == '*'){
 				
 				mysql_query("UPDATE tb_pcp_operacao SET
-					             CO_RECURSO    = '".$rowTotvsSG2010['G2_RECURSO']."'
-								 , CO_OPERACAO = '".$rowTotvsSG2010['G2_OPERAC']."'
-								 , DS_OPERACAO = '".$rowTotvsSG2010['G2_DESCRI']."'
-								 , CO_PRODUTO  = '".$rowTotvsSG2010['G2_PRODUTO']."'
+					             CO_RECURSO    = '".trim($rowTotvsSG2010['G2_RECURSO'])."'
+								 , CO_OPERACAO = '".trim($rowTotvsSG2010['G2_OPERAC'])."'
+								 , DS_OPERACAO = '".trim($rowTotvsSG2010['G2_DESCRI'])."'
+								 , CO_PRODUTO  = '".trim($rowTotvsSG2010['G2_PRODUTO'])."'
 								 , FL_DELET    = '*'
 					 		 WHERE CO_RECNO = '".$rowTotvsSG2010['R_E_C_N_O_']."'",$conexaoExtranet)or die(mysql_error());
 						
 			}else{
 				
 				mysql_query("UPDATE tb_pcp_operacao SET
-					     	     CO_RECURSO    = '".$rowTotvsSG2010['G2_RECURSO']."'
-								 , CO_OPERACAO = '".$rowTotvsSG2010['G2_OPERAC']."'
-								 , DS_OPERACAO = '".$rowTotvsSG2010['G2_DESCRI']."'
-								 , CO_PRODUTO  = '".$rowTotvsSG2010['G2_PRODUTO']."'
+					     	     CO_RECURSO    = '".trim($rowTotvsSG2010['G2_RECURSO'])."'
+								 , CO_OPERACAO = '".trim($rowTotvsSG2010['G2_OPERAC'])."'
+								 , DS_OPERACAO = '".trim($rowTotvsSG2010['G2_DESCRI'])."'
+								 , CO_PRODUTO  = '".trim($rowTotvsSG2010['G2_PRODUTO'])."'
 					 		 WHERE CO_RECNO = '".$rowTotvsSG2010['R_E_C_N_O_']."'",$conexaoExtranet)or die(mysql_error());
 			
 			}
