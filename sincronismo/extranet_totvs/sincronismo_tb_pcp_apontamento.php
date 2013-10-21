@@ -57,7 +57,7 @@
 				//FIM CAPTURA O CODIGO DA ULTIMA INTEGRACAO DA TABELA
 				
 				$dataCadastro    = date("Ymd");
-				$horaCadastro    = date("h:i:s");
+				$horaCadastro    = date("H:i:s");
 				$tipoApontamento = '1';	
 				
 				$sqlParametro = mysql_query("SELECT NO_PARAMETRO, VL_PARAMETRO FROM tb_parametro",$conexaoExtranet)
