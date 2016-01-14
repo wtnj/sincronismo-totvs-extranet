@@ -1,0 +1,1 @@
+Projeto que gerencia o sincronismo entre as bases de dados do Totvs e do Extranet.
